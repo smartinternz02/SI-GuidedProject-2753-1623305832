@@ -18,8 +18,7 @@ from PIL import Image
 
 
 
-pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
-img = cv2.imread('1.jpg',cv2.IMREAD_COLOR)
+
 img = imutils.resize(img, width=500 )
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #convert to grey scale
 gray = cv2.bilateralFilter(gray, 11, 17, 17) #Blur to reduce noise
